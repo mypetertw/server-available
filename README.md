@@ -21,7 +21,7 @@ You can schedule your script using Linux's `Crontab`.
 $ crontab -e
 ```
 
-Backup every day at midnight
+Run every day at midnight
 
 ```sh
 0 0 * * * php /var/www/Server-Available.php
