@@ -10,7 +10,7 @@ Put `Server-Available.php` to your project.
 ## Usage
 
 ```sh
-$ php ServerAvailable.php
+$ php Server-Available.php
 ```
 
 ## Using Crontab to run script automatic
