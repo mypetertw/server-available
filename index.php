@@ -1,18 +1,17 @@
 <?php
-## Server Alive 2019/03/10 v0.0.2
-## Server List:
+# Server List:
 $webServer = '0';
 
-## Config:
+# Config:
 $port = 80;
 $timeout = 30;
 
-## Ping Chatgether Web Server
+# Ping Chatgether Web Server
 if (!$socket = @fsockopen($webServer, $port, $errno, $errstr, $timeout)) {
   $serverName = 'XXX Web Server';
 }
 
-## START: if server offline
+# START: Report slack channel if server offline
 if (!$socket) {
   $json = '{
     "text": "WARNING: '.$serverName.' is offline!",
@@ -28,4 +27,3 @@ if (!$socket) {
 }
 
 fclose($socket);
-?>
